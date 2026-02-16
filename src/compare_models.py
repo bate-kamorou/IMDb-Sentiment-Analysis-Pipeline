@@ -26,6 +26,7 @@ linear_model.fit(X_train, y_train)
 
 # make predictions
 model_preds = linear_model.predict(X_test)
+print("Linear model trained on sparce vector completed")
 
 # model accuracy
 model_acc = accuracy_score(y_test, model_preds)

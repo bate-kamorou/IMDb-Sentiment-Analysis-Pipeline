@@ -19,7 +19,7 @@ y_test = np.ravel(y_test)
 
 
 # train the model
-model.fit(X_train, y_train)
+model.fit(X_train["Values"], y_train["Values"])
 
 # make prediction 
 y_preds = model.predict(X_test)

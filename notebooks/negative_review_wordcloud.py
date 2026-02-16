@@ -2,8 +2,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 
-
-
 # load the cleaned dataser
 df = pd.read_csv("NPL_Sentiment_Analysis/data/processed/1000_cleaned_reviews.csv")
 
@@ -15,7 +13,7 @@ negative_review = df[sorting]
 negative_review_cleaned = negative_review["cleaned_review"]
 # print(df[sorting])
 negative_text = negative_review_cleaned.str.cat(sep=" ")
-print(negative_text)
+
 # plot the wordcloud of the poistive reviews
 plt.rcParams["figure.figsize"]= [10, 10]
 
